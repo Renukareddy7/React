@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: pink;
+}
+#mainform{
+    width: 500px;
+    padding: 20px;
+    text-transform: uppercase;
+    background-color: #fff;
+}
+
+.inputform{
+    margin: 10px 0;
+}
+.inputform label{
+    display: inline-block;
+    margin: 3px;
+
+}
+.inputform input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+.btn{
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+}
+.btn:hover{
+    color: #000;
+    background-color: #fff;
+    border: 2px solid black;
+}
+h1{
+    text-align: center;
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn{
+            height: 3rem;
+            width: 10rem;
+            font-size: larger;
+            background-color: pink;
+            box-sizing: content-box;
+        }
+        .btn:hover{
+            background-color: pink;
+        }
+        .btn:hover #s1{
+            transform: scale(0);
+            transition: all ease-in 0.05s;
+        }
+        .btn:hover #s2{
+            transform: scale(1);
+            transition: all ease 0.1s;
+        }
+        #s1{
+            position: fixed;
+            padding-left: 2rem;
+        }
+        #s2{
+            position: relative;
+            display: inline-block;
+            transform: scale(0);
+        }
+    </style>
+    <style>
+        .click_btn{
+            position: absolute;
+            height: 3rem;
+            width: 9rem;
+            border: 2px solid black;
+            font-size: larger;
+            background-color: aqua;
+            box-sizing: content-box;
+            z-index: 5;
+        }
+        div:hover .border1{
+            position: absolute;
+            height: 3rem;
+            width: 9.75rem;
+            margin: -5px 5px;
+            border: 2px solid black;
+            background-color: aqua;
+            z-index: 3;
+            transition: all ease 0.1s;
+        }
+        div:hover .border2{
+            position: absolute;
+            height: 3rem;
+            width: 9.75rem;
+            margin: -10px 10px;
+            border: 2px solid black;
+            background-color: aqua;
+            z-index: 2;
+            transition: all ease 0.15s;
+        }
+        div:hover .border3{
+            position: absolute;
+            height: 3rem;
+            width: 9.75rem;
+            margin: -15px 15px;
+            border: 2px solid black;
+            background-color: aqua;
+            z-index: 1;
+            transition: all ease 0.2s;
+        }
+    </style>
+
+    <style>
+        .delete_btn{
+            position: absolute;
+            height: 3rem;
+            width: 9rem;
+            font-size: larger;
+            background-color: blue;
+            box-sizing: content-box;
+        }
+        .delete_bin{
+            position: absolute;
+            margin-left: 4.2rem;
+            height: 3rem;
+            width: 9rem;
+            font-size: 40px;
+            transform: scale(0);
+        }
+        section:hover .delete_span{
+            visibility: hidden;
+            transition: all ease 0.05s;
+        }
+        section:hover .delete_bin{
+            transform: scale(1);
+            transition: all ease-in-out 0.15s;
+        }
+    </style>
+</head>
+<body>
+    
+    <button class="btn"><span id="s1">Return </span><span id="s2">Form returned ←</span></button>
+    
+    <br><br><br><br><br>
+    <br><br><br>
+
+    <div style="position: fixed;">
+    <button class="click_btn">Hover me</button>
+    <p class="border1"></p>
+    <p class="border2"></p>
+    <p class="border3"></p>
+    </div>
+
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+
+    <section style="position: fixed;">
+    <button class="delete_btn"><span class="delete_span">Delete file</span></button>
+    <span class="delete_bin">⩐</span>
+    </section>
+
+
+
+
+
+</body>
+</html>

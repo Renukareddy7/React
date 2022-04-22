@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#input{
+    width: 350px;
+    height: 40px;
+    border-radius: 13px;
+    background-color: black;
+    color: white;
+}
+#btn{
+    width: 200px;
+    height:40px;
+    border-radius: 15px;
+}
+#result{
+   
+    display: flex;
+    justify-content: space-evenly;
+    
+   
+}
+div h1{
+ text-align: center;
+ margin-top: 45px;
+ font-size: 25px;
+}
+div img{
+    width: 350px;
+  height: 500px;
+    margin: 20px;
+}
